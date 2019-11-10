@@ -1,5 +1,7 @@
-input()
 count = [0]*6
-for t in map(int,input().strip().split()):
+arr = [1,2,3,3,4]
+for t in arr:
     count[t] += 1
-print(count.index(max(count)))
+maxVal = max(count)
+ans = count.index(maxVal)
+print(ans)
